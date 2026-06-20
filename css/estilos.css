@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d; 
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.topo-marca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #1a1a1a;
+    background-color: #050505;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #a855f7; 
+    letter-spacing: 1px;
+}
+
+.menu-navegacao ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-navegacao a {
+    color: #a855f7; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #d8b4fe;
+}
+
+.busca-container {
+    display: flex;
+}
+
+.busca-container input {
+    background-color: #1a1a1a;
+    border: 1px solid #a855f7;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.busca-container button {
+    background-color: #a855f7;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.secao-hero {
+    text-align: center;
+    padding: 80px 10%;
+    background: linear-gradient(180deg, #050505 0%, #0d0d0d 100%);
+}
+
+.secao-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.btn-principal {
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+    transition: transform 0.2s;
+}
+
+.btn-principal:hover {
+    transform: scale(1.05);
+}
+
+.secao-beneficios {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.beneficios-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.beneficio-card {
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 1px solid #222;
+}
+
+.beneficio-card h4 {
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.secao-vitrine {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.secao-vitrine h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.vitrine-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 40px;
+}
+
+.look-card {
+    background-color: #141414;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    border: 1px solid #1a1a1a;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.look-card:hover {
+    transform: translateY(-10px);
+    border-color: #a855f7;
+}
+
+.look-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.obra-midia {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.links-afiliados {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-loja {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.shopee { background-color: #ee4d2d; }
+.amazon { background-color: #ff9900; color: #111; }
+.shein { background-color: #000000; border: 1px solid #fff; }
+
+.rodape-site {
+    background-color: #050505; 
+    padding: 30px 5%; 
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    margin-top: 60px;
+}
+
+.contatos-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.diretos-autorais {
+    font-size: 0.75rem;
+    color: #666;
+}
