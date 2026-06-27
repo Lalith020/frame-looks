@@ -24,4 +24,27 @@ document.addEventListener("DOMContentLoaded", function() {
     btnExplorar.addEventListener("click", function() {
         document.getElementById("vitrine").scrollIntoView({ behavior: "smooth" });
     });
+    // Sistema de Filtros por Categoria
+    const botoesFiltro = document.querySelectorAll(".btn-filtro");
+
+    botoesFiltro.forEach(botao => {
+        botao.addEventListener("click", function() {
+            // Remove a cor roxa do botão que estava ativo antes
+            document.querySelector(".btn-filtro.ativo").classList.remove("ativo");
+            // Coloca a cor roxa no botão que foi clicado agora
+            this.classList.add("ativo");
+
+            const categoriaSelecionada = this.getAttribute("data-filtro");
+
+            cardsPersonagem.forEach(card => {
+                const categoriaCard = card.getAttribute("data-categoria");
+
+                if (categoriaSelecionada === "todos" || categoriaCard === categoriaSelecionada) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
 });
