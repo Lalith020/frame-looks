@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frame Looks | Do Ecrã para o seu Closet</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-
     <header class="topo-marca">
         <div class="logo">
             <h1>Frame Looks</h1>
         </div>
         <nav class="menu-navegacao">
             <ul>
-                <li><a href="#inicio">MENU</a></li>
-                <li><a href="#vitrine">FILTRO</a></li>
-                <li><a href="#contato">CONTATOS</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
             </ul>
         </nav>
         <div class="busca-container">
@@ -48,8 +48,15 @@
 
         <section id="vitrine" class="secao-vitrine">
             <h3>Looks e Cosplays em Alta</h3>
+            <div class="filtros-container">
+                <button class="btn-filtro ativo" data-filtro="todos">Todos</button>
+                <button class="btn-filtro" data-filtro="filme">Filmes</button>
+                <button class="btn-filtro" data-filtro="midia">Quadrinhos/Séries</button>
+            </div>
+
             <div class="vitrine-container">
-                <article class="look-card" data-personagem="elle woods">
+                <!-- Adicionado data-categoria="filme" -->
+                <article class="look-card" data-personagem="elle woods" data-categoria="filme">
                     <img src="https://i.pinimg.com/236x/64/03/b2/6403b28e8d918ac08b175a3683c3ab5d.jpg?nii=t" alt="Elle Woods" class="look-img">
                     <h4>Elle Woods</h4>
                     <p class="obra-midia">Filme: Legalmente Loira</p>
@@ -59,7 +66,8 @@
                     </div>
                 </article>
 
-                <article class="look-card" data-personagem="miles morales">
+                <!-- Adicionado data-categoria="midia" -->
+                <article class="look-card" data-personagem="miles morales" data-categoria="midia">
                     <img src="https://i.pinimg.com/736x/98/9b/88/989b8825048e2fec31570a674437588b.jpg" alt="Miles Morales" class="look-img">
                     <h4>Miles Morales</h4>
                     <p class="obra-midia">Mídia: Marvel Comics</p>
@@ -68,17 +76,33 @@
                         <a href="#" class="btn-loja shein">Ver na Shein</a>
                     </div>
                 </article>
-
-                <article class="look-card" data-personagem="shizuku">
-                    <img src="https://i.pinimg.com/736x/1a/0c/fc/1a0cfc4b727cd4cb0b23023023e9cb14.jpg" alt="Shizuku" class="look-img">
-                    <h4>Shizuku</h4>
-                    <p class="obra-midia">Anime: Hunter x Hunter</p>
-                    <div class="links-afiliados">
-                        <a href="#" class="btn-loja shopee">Ver na Shopee</a>
-                        <a href="#" class="btn-loja shein">Ver na Shein</a>
-                    </div>
-                </article>
             </div>
+        </section>
+
+        <!-- Seção Depoimentos Obrigatória -->
+        <section id="depoimentos" class="secao-depoimentos">
+            <h2>Depoimentos de Usuários</h2>
+            <div class="depoimentos-container">
+                <div class="depoimento-card">
+                    <p>"Adorei os achados do Frame Looks, recomendo!" - Cliente Satisfeito</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Orçamento Obrigatória -->
+        <section id="orcamento" class="secao-orcamento">
+            <h2>Solicitar Orçamento</h2>
+            <form class="formulario-orcamento">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail Corporativo" required>
+                <select required>
+                    <option value="">Segmento da Empresa</option>
+                    <option value="moda">Varejo de Moda</option>
+                    <option value="entretenimento">Entretenimento / Eventos</option>
+                </select>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="btn-principal">Solicitar Demonstração Gratuita</button>
+            </form>
         </section>
     </main>
 
