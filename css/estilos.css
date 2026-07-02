@@ -239,3 +239,134 @@ body {
     color: #ffffff;
     box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
 }
+/* ==================== SEÇÃO DEPOIMENTOS ==================== */
+.secao-depoimentos {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: #0b0b0b;
+}
+
+.secao-depoimentos h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.depoimento-card {
+    background-color: #141414;
+    border: 1px solid #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-depoimento {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.autor-info {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #a855f7;
+}
+
+.tag-autor {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 2px;
+}
+
+
+/* ==================== SEÇÃO ORÇAMENTO ==================== */
+.secao-orcamento {
+    padding: 60px 5%;
+    text-align: center;
+    background: linear-gradient(180deg, #0b0b0b 0%, #050505 100%);
+}
+
+.secao-orcamento h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.subtitulo-orcamento {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+}
+
+.formulario-orcamento {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #141414;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.formulario-orcamento input,
+.formulario-orcamento select,
+.formulario-orcamento textarea {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formulario-orcamento input:focus,
+.formulario-orcamento select:focus,
+.formulario-orcamento textarea:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.2);
+}
+
+.formulario-orcamento select {
+    cursor: pointer;
+    appearance: none; /* Remove seta padrão em alguns navegadores */
+}
+
+.formulario-orcamento textarea {
+    resize: vertical;
+}
+
+.btn-formulario {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    border-radius: 8px;
+}

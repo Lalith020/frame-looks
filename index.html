@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frame Looks | Do Ecrã para o seu Closet</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header class="topo-marca">
@@ -79,14 +79,50 @@
             </div>
         </section>
 
-        <!-- Seção Depoimentos Obrigatória -->
+       <!-- Seção Depoimentos Atualizada -->
         <section id="depoimentos" class="secao-depoimentos">
-            <h2>Depoimentos de Usuários</h2>
+            <h3>O que dizem os Trendsetters & Cosplayers</h3>
             <div class="depoimentos-container">
                 <div class="depoimento-card">
-                    <p>"Adorei os achados do Frame Looks, recomendo!" - Cliente Satisfeito</p>
+                    <p class="texto-depoimento">"Sempre quis montar um guarda-roupa inspirado no estilo dark autumn da Jennifer Check. O Frame Looks encontrou peças idênticas na Shein que eu nunca acharia sozinha. Uso de inspiração para o meu dia a dia!"</p>
+                    <div class="autor-info">
+                        <span class="nome-autor">Mariana Silva</span>
+                        <span class="tag-autor">Casual Fashion</span>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <p class="texto-depoimento">"Para quem faz cosplay, a precisão dos detalhes é tudo. Consegui montar o look completo do Miles Morales usando os links da Amazon e Shopee direto pelo site. Economizei horas de pesquisa!"</p>
+                    <div class="autor-info">
+                        <span class="nome-autor">Lucas Andrade</span>
+                        <span class="tag-autor">Cosplayer Profissional</span>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Seção Orçamento Atualizada -->
+        <section id="orcamento" class="secao-orcamento">
+            <h3>Solicitar Orçamento de Parceria</h3>
+            <p class="subtitulo-orcamento">Gostaria de integrar sua loja de moda ou acessórios ao nosso catálogo? Envie uma mensagem.</p>
+            <form class="formulario-orcamento">
+                <div class="grupo-input">
+                    <input type="text" placeholder="Seu Nome" required>
+                </div>
+                <div class="grupo-input">
+                    <input type="email" placeholder="E-mail Corporativo" required>
+                </div>
+                <div class="grupo-input">
+                    <select required>
+                        <option value="" disabled selected>Segmento da Empresa</option>
+                        <option value="moda">Varejo de Moda / E-commerce</option>
+                        <option value="entretenimento">Eventos / Ateliê Cosplay</option>
+                    </select>
+                </div>
+                <div class="grupo-input">
+                    <textarea placeholder="Descreva sua loja ou proposta de parceria..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-principal btn-formulario">Enviar Solicitação</button>
+            </form>
         </section>
 
         <!-- Seção Orçamento Obrigatória -->
@@ -114,7 +150,6 @@
         </div>
         <p class="diretos-autorais">&copy; 2026 Frame Looks. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/ex7_3.js"></script>
 </body>
 </html>
