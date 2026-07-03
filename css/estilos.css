@@ -239,7 +239,6 @@ body {
     color: #ffffff;
     box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
 }
-/* ==================== SEÇÃO DEPOIMENTOS ==================== */
 .secao-depoimentos {
     padding: 60px 5%;
     text-align: center;
@@ -298,8 +297,6 @@ body {
     margin-top: 2px;
 }
 
-
-/* ==================== SEÇÃO ORÇAMENTO ==================== */
 .secao-orcamento {
     padding: 60px 5%;
     text-align: center;
@@ -357,7 +354,7 @@ body {
 
 .formulario-orcamento select {
     cursor: pointer;
-    appearance: none; /* Remove seta padrão em alguns navegadores */
+    appearance: none; 
 }
 
 .formulario-orcamento textarea {
